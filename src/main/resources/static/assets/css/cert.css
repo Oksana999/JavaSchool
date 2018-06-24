@@ -1,0 +1,67 @@
+.container {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-evenly;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.border-outer{
+	width:1100px; 
+	height:650px; 
+	padding:20px; 
+	text-align:center; 
+	background-color:#826a36;
+}
+
+.border-inner {
+	width:1050px; 
+	height:600px; 
+	padding:20px; 
+	text-align:center; 
+	border: 5px solid RGB(100,80,70);
+}
+
+.cert-inner {
+	text-color:#473909; 
+	background-color:#e0d7b8;
+}
+
+.cert-outline {
+	border: 15px solid #826a36;
+	flex: 10;
+}
+
+.cert{
+	border: 15px solid #826a36;
+	outline: 5px solid RGB(100,80,70);
+	background-color:#e0d7b8;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+}
+
+.seal-img {
+	width:150px;
+	height:150px;
+	background-image: url("https://st3.depositphotos.com/12010552/15004/v/450/depositphotos_150041480-stock-illustration-triple-horn-of-odin-decorated.jpg");
+	background-size: 100%;
+	background-blend-mode: darken;
+	mix-blend-mode: darken;
+	margin: 0 auto;
+}
+
+.cert span {
+	margin: 0 auto;
+}
+
+.img-bottom-right{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+.img-bottom-right img{
+	width: 200px;
+	mix-blend-mode: darken;
+}
