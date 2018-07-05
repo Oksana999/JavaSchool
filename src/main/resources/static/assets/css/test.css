@@ -1,147 +1,188 @@
+body {
+    background-color: rgb(142, 173, 232);
+}
+
+.container {
+    text-align: center;
+}
+
+.form {
+    color: white;
+    display: inline-block;
+    text-align: left;
+}
+
+.myButton {
+    margin: 10px auto;
+}
+
+/*.container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
 .testFooter {
 
-	background-color: dodgerblue;
-   color: white;
-  
+    background-color: dodgerblue;
+    color: white;
+
 }
 * {box-sizing: width=150 height=100;}
 
 body { 
-  margin: 0;
-   background-color:#666150;
-  font-family: Arial;
-  text-collor:4b82e8;
+    margin: 0;
+    background-color:#D4CFED;
+    font-family: Arial;
+    text-collor: #4b82e8;
 }
 .testFooter1 {
-	background-color:#8f9eea;
+    background-color:#fcece8;
 }
 .img {
-	background-image: url(../../images/banner.jpg);
-		background-color: #72C1F8;
-		box-shadow: 10px 10px 5px #9D9DCD;
-	
+    background-image: url(../../images/banner.jpg);
+    background-color: #72C1F8;
+    box-shadow: 10px 10px 5px #9D9DCD;	
+}
+.img1 {
+    background-image: url(../../images/sky.jpg);
+    width:800px;
+    height:550px;
+    box-shadow: 10px 10px 5px #9D9DCD;
+
+}
+.button-topp-right {
+    position:absolute;
+    top:450px;
+    right:750px;
+    border: 10px solid #7765DC;
+    background-color:#e0d7b8;
 }
 
 .header1 {
-	padding: 7em 0 9em 0;
-		
-		background-image: url(../../images/banner.jpg);
-		background-color: #72C1F8;
-		box-shadow: 10px 10px 5px #9D9DCD;
-		background-size: cover;
-		background-position: bottom;
-		background-attachment: fixed;
-		background-repeat: no-repeat;
-		text-align: center;
-		position: relative;
-		
-	}
-	
-	.img-overlay{
+    padding: 7em 0 9em 0;
+
+    background-image: url(../../images/banner.jpg);
+    background-color: #72C1F8;
+    box-shadow: 10px 10px 5px #9D9DCD;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    color:ffffff;
+    position: relative;
+
+}
+
+.img-overlay{
     width: 100%;
     height: 100%;
     background-color: #72C1F8;
 }
-	#header1:before {
-			content: '';
-			background: rgba(97, 124, 175, 0.73);
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			left: 0;
-		}
-	
-	#header1 .inner {	
-	
-   overflow: hidden;
-  background-color: #72C1F8;
-  padding: 20px 10px; 
+#header1:before {
+    content: '';
+    background: rgba(97, 124, 175, 0.73);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#header1 .inner {	
+
+    overflow: hidden;
+    background-color: #72C1F8;
+    padding: 20px 10px; 
 }
 
 .header-login {
-  float: left;
-  color: #ffffff;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 25px; 
-  line-height: 25px;
-  border-radius: 4px;
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 25px; 
+    line-height: 25px;
+    border-radius: 4px;
 }
 
 .header-login .logo {
-	float: left;
-  font-size: 45px;
-  font-weight: bold;
-  background-color: #ddd;
-  color: #4b82e8;
+    float: left;
+    font-size: 45px;
+    font-weight: bold;
+    background-color: #ddd;
+    color: #4b82e8;
 }
 
 .header-login:hover {
-  background-color:#72C1F8;;
-  color: #4b82e8;
+    background-color:#72C1F8;;
+    color: #4b82e8;
 }
 
 .header-login:active {
-  background-color: dodgerblue;
-   font-size: 25px;
-  color: white;
-  margin-right: 20px auto;
- 
+    background-color: dodgerblue;
+    font-size: 25px;
+    color: white;
+    margin-right: 20px auto;
+
 }
 .margin-left{
     margin-left: 80px !important;
 }
 
 .header1-right {
-  float: right;
-  font-size: 45px;
-  color: white;
-   margin-right: 20px auto;
+    float: right;
+    font-size: 45px;
+    color: white;
+    margin-right: 20px auto;
 }
 .header2-right {
-  float: right;
-  font-size: 25px;
-  color: white;
-   margin-right: 20px auto;
+    float: right;
+    font-size: 25px;
+    color: white;
+    margin-right: 20px auto;
     background-color:#ffffff;;
-  color: black;
+    color: black;
 }
 .header2 a:hover {
-  background-color:#ffffff;;
-  color: black;
+    background-color:#ffffff;;
+    color: black;
 }
 
 @media screen and (max-width: 400px) {
-  .header1 a {
-    float: none;
-    display: block;
-    text-align: left;
-    text-size:15px;
-  }
-  
-  .button {
-	height: 50px;
-    position: relative;
-    border: 3px solid white;
-	}
+    .header1 a {
+        float: none;
+        display: block;
+        text-align: left;
+        text-size:15px;
+    }
 
-	.btn {
-		 float: right;
-	  font-size: 45px;
-	  color: white;
-	   margin-right: 50px auto;
-	    background-color: RoyalBlue;
-	    border: none;
-	    color: white;
-	    padding: 50px 35px;
-	    cursor: pointer;
-	}
-	.btn:hover {
-	    background-color: RoyalBlue;
-	    font-size: 45px;
-	}
+    .button {
+        height: 50px;
+        position: relative;
+        border: 3px solid white;
+    }
+
+    .btn {
+        float: right;
+        font-size: 45px;
+        color: white;
+        margin-right: 50px auto;
+        background-color: RoyalBlue;
+        border: none;
+        color: white;
+        padding: 50px 35px;
+        cursor: pointer;
+    }
+    .btn:hover {
+        background-color: RoyalBlue;
+        font-size: 45px;
+    }
 
 }
 
@@ -150,7 +191,7 @@ nav {
     width:100%;
 
     float:left;
-   
+
     border:10px solid #666150;
     position: relative;
     z-index: 10;
@@ -166,3 +207,4 @@ nav:after {
     bottom: 10px;
     z-index: -1;
 }
+*/

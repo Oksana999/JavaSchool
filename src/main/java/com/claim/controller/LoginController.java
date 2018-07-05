@@ -44,14 +44,7 @@ public class LoginController {
 
 	@RequestMapping(value = "/logout", method = RequestMethod.GET)
 	public ModelAndView logoutUser(HttpSession session, @ModelAttribute("user") User user) {
-		//System.out.println(user);
 		session.invalidate();
-	/*	User user2 = userService.login(user.getEmail(), user.getPassword());
-		
-		if(user2 != null) {
-			session.setAttribute("currentUser", user2);
-			return new ModelAndView("logout", "user", new User());
-		}else */
 		return new ModelAndView("home", "user", new User());
 	}
 

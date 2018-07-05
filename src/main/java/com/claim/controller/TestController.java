@@ -1,8 +1,5 @@
 package com.claim.controller;
 
-import java.sql.Date;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 import javax.servlet.http.HttpSession;
@@ -90,8 +87,4 @@ public class TestController {
      
 }
 
-// process the answers
 
-// calculate the points
-
-// determine the mark based on points

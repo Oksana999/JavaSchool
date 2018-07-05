@@ -3,134 +3,131 @@
 <!DOCTYPE HTML>
 
 <html>
-	<head>
-		<title>Projection by TEMPLATED</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css"/>
-		<link rel="script" href="assets/js/script.js"/>
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <head>
+        <title>Java School Homepage</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="script" href="assets/js/script.js"/>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"/>
-        <link rel="stylesheet" href="assets/css/style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"/>
+        <link rel="stylesheet" href="assets/css/app.css"/>
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-       <!--   <script src="script.js"></script> -->
-	</head>
-	<body>
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+        <script src="assets/js/script.js"></script>
+        <style> 
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="index.html" class="logo"><strong>Programming School</strong></a>
-					<nav id="nav">
-					<!--	<a href="/">Home</a>  -->
-						<a href="register">Register</a>
-						<c:choose>
-						    <c:when test="${sessionScope.currentUser == null}">
-						        <a href="login">Login</a>
-						    </c:when>    
-						    <c:otherwise>
-						        <a href="logout">Logout</a>
-						    </c:otherwise>
-						</c:choose>
-						
-					</nav>
-					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
-				</div>
-			</header>
-
-		<!-- Banner -->
-			<section id="banner">
-				<div class="inner">
-					<header>
-						<h1>Welcome to Our Java School!</h1>
-					</header>
+		     body {
+		       		margin: 0;
+		       		height: 100%;
+					 background: url(../../images/testImg.jpg)  no-repeat; 
+					 background-size: cover;
+					}
 					
-				
+					    -webkit-background-size: 100%; 
+					    background-size: 100%;
+					    color: #fff;  
+		
+					    background-position:center;
+					    background-position:top;
+					    background-repeat: no-repeat;   
+		            }
+        </style>
+    </head>
+    <body>
+        <!-- Banner -->
+        <section id="banner">
+            <!-- Header -->
+            <header id="header">
+                <div class="left">
+                    <a href="/"><div class="logo">
+                            <svg id="Layer_1" style="enable-background:new 0 0 96 96;" version="1.1" viewBox="0 0 96 96" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g><path d="M87,9v67.4L48.8,86.6c-0.1,0-0.4,0.1-0.8,0.1c-0.5,0-0.8,0-0.8-0.1L9,76.4V9h36.6h4.9H87 M90.6,3H50.4c-1.3,0-3.6,0-4.9,0   H5.4C4.1,3,3,4.1,3,5.4v73.1c0,1.3,1.1,2.7,2.4,3.1l40.3,10.7c0.7,0.2,1.5,0.3,2.4,0.3s1.7-0.1,2.4-0.3l40.3-10.7   c1.3-0.3,2.4-1.7,2.4-3.1V5.4C93,4.1,91.9,3,90.6,3L90.6,3z"/></g><line class="st0" x1="3" x2="93" y1="18" y2="18"/><g><path class="st0" d="M4,70l41.4,11.3c1.4,0.4,3.7,0.4,5.1,0L92,70"/></g><g><path d="M25,59.6l0.7-2.8c0.3,0.1,0.7,0.2,1,0.2c1,0,1.4-0.7,1.4-2.1v-13H32v12.9c0,2.8-1.1,5.2-4.7,5.2C26.2,60,25.5,59.8,25,59.6   z M27.8,38c0-1.2,1-2,2.3-2c1.3,0,2.3,0.8,2.3,2c0,1.2-1,2-2.3,2C28.8,40,27.8,39.2,27.8,38z"/><path d="M34,51.3c0-2.7,2.2-4.2,7.4-4.7c-0.1-1.2-0.6-1.9-2.1-1.9c-1.1,0-2.2,0.4-3.5,1.2l-1.4-2.5c1.7-1,3.5-1.7,5.6-1.7   c3.4,0,5.2,1.9,5.2,5.9v7.4h-3.2l-0.3-1.3h-0.1c-1.1,1-2.3,1.6-3.8,1.6C35.5,55.2,34,53.5,34,51.3z M41.4,51.1v-2.3   c-2.8,0.4-3.7,1.2-3.7,2.1c0,0.8,0.6,1.2,1.5,1.2C40.1,52.2,40.7,51.8,41.4,51.1z"/><path d="M46.4,41.9h3.9L52,48c0.3,1.3,0.7,2.6,1,4h0.1c0.3-1.4,0.7-2.7,1-4l1.7-6.1h3.7l-4.3,13h-4.5L46.4,41.9z"/><path d="M59.7,51.3c0-2.7,2.2-4.2,7.4-4.7c-0.1-1.2-0.6-1.9-2.1-1.9c-1.1,0-2.2,0.4-3.5,1.2l-1.4-2.5c1.7-1,3.5-1.7,5.6-1.7   c3.4,0,5.2,1.9,5.2,5.9v7.4h-3.2l-0.3-1.3h-0.1c-1.1,1-2.3,1.6-3.8,1.6C61.2,55.2,59.7,53.5,59.7,51.3z M67.1,51.1v-2.3   c-2.8,0.4-3.7,1.2-3.7,2.1c0,0.8,0.6,1.2,1.5,1.2C65.8,52.2,66.4,51.8,67.1,51.1z"/></g></svg>
+                        </div></a>
+                </div>
+                <div class="right">
+                    <nav id="nav">
+                        <a href="register">Register</a>
+                        <c:choose>
+                            <c:when test="${sessionScope.currentUser == null}">
+                                <a href="login">Login</a>
+                            </c:when>    
+                            <c:otherwise>
+                                <a href="logout">Logout</a>
+                            </c:otherwise>
+                        </c:choose>
+                    </nav>
+                    <a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+                </div>
+            </header>
+            <div class="inner">
+                <h1>Welcome to Our Java School</h1>
+            </div>
+        </section>
 
-					<div class="flex ">
-
-						<div>
-							 
-							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSl2GmUCYZaiscvjyAgfiX4ZUMxsrNq29LqR04ECQ66Sw2pYcB8w" alt="Pic 01" width=100 height=90/>
-							<footer>
-								<a href="myclass" class="button">Start Your Class</a>
-							</footer>
-
-				       </div>  
-
-				       <div>
-							 
-							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Duke_%28Java_mascot%29_waving.svg/2000px-Duke_%28Java_mascot%29_waving.svg.png" alt="Pic 01" width=100 height=90/>
-							<footer>
-								<a href="test" class="button">Test</a>
-							</footer>
-
-			         </div>
-						
-			        <div class="popup hidden">
-			            <div class="popup-window">
-			                <div class="close">&times;</div>
-			                <div class="popup-content">
-			                    Hey, this is a popup!
-			                </div>
-			            </div>
-			        </div>
-							
-					<div>
-						 
-						<img src="https://us.123rf.com/450wm/sakura28/sakura281703/sakura28170300428/73588350-crystal-trophy-certificate-design-template-on-red-background-vector-illustration.jpg?ver=6" alt="Pic 01" width=100 height=90/>
-						<footer>
-							<a href="certificate" class="button">Certificate!</a>
-						</footer>
-					</div>		
-			    </div>
-		    </div>
-	    </section>
-
-		<!-- Three -->
-			<section id="three" class="wrapper align-center">
-				
-				<div class="inner">
-					<div class="flex flex-2">
-						<article>
-							<div class="image round">
-								 <img src="http://obrazovanie.by/wp-content/uploads/2016/02/online-study.jpg" alt="Pic 01" width=180 height=120/>
-								
-								
-							</div>
-							
-							<footer>
-								<a href="about" class="button">More about our school</a>
-							</footer>
-						</article>
-						<article>
-							<div class="image round">
-								<img src="https://st.depositphotos.com/1005893/2625/i/950/depositphotos_26257425-stock-photo-indian-graduate-student-showing-her.jpg" alt="Pic 02" width=180 height=120 />
-							</div>
-							
-							<footer>
-								<a href="contacts" class="button">Our Contacts</a>
-							</footer>
-						</article>
-					</div>
-				</div>
-			</section>
-
-	<!-- 	<script>
-			$(document).ready(function () {
-			    $(".popup").toggleClass("hidden");
-			    
-			    $(".close").click(function () {
-			        $(".popup").toggleClass("hidden");
-			    });
-			});
-		</script>  -->
-
-		<!-- Scripts -->
-	<!--		<script src="src/main/resources/img/static/assets/js/jquery.min.js"height: 300></script>
-			<script src="src/main/resources/img/static/assets/js/skel.min.js"></script>
-			<script src="src/main/resources/img/static/assets/js/util.js"></script>
-			<script src="src/main/resources/img/static/assets/js/main.js"></script> -->
-
-	</body>
+        <!-- Three -->
+       
+       <section class="pages">
+            <div class="main">
+      	
+                 <a href="myclass">
+                    <div class="element">		 
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSl2GmUCYZaiscvjyAgfiX4ZUMxsrNq29LqR04ECQ66Sw2pYcB8w" alt="Pic 01" width=100 height=90/>
+                        <footer>
+                            Start Your Class
+                        </footer>
+                    </div>  
+                 </a> 
+                <a href="test">
+                    <div class="element">			 
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Duke_%28Java_mascot%29_waving.svg/2000px-Duke_%28Java_mascot%29_waving.svg.png" alt="Pic 01" width=100 height=90/>
+                        <footer>
+                            Test
+                        </footer>
+                    </div>						
+                 </a>
+                <a href="certificate">
+                    <div class="element"> 	
+                        <img src="https://us.123rf.com/450wm/sakura28/sakura281703/sakura28170300428/73588350-crystal-trophy-certificate-design-template-on-red-background-vector-illustration.jpg?ver=6" alt="Pic 01" width=100 height=90/>
+                        <footer>
+                            Certificate
+                        </footer>
+                    </div>		
+                </a>
+            </div> 
+            <div class="info">
+                <a href="about">
+                    <article class="element" style="position: absolute; top: 520px; left: 405px;">
+                        <div class="circle">
+                            <img src="http://obrazovanie.by/wp-content/uploads/2016/02/online-study.jpg" alt="Pic 01" width=180 height=120/>
+                        </div>
+                        <footer>
+                            More About My Project
+                        </footer>
+                    </article>
+                </a>
+                <a href="contacts">
+                    <article class="element" style="position: absolute; top: 520px; left: 970px;">
+                        <div class="circle">
+                            <img src="https://st.depositphotos.com/1005893/2625/i/950/depositphotos_26257425-stock-photo-indian-graduate-student-showing-her.jpg" alt="Pic 02" width=180 height=120 />
+                        </div>
+                        <footer> 
+                            Contact Us 
+                        </footer>
+                    </article>
+                </a>
+            </div>
+        </section>
+       
+        
+        <div class="popup hidden">
+            <div class="popup-window">
+                <div class="close">&times;</div>
+                <div class="popup-content">
+                    My Java School!
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

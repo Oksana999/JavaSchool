@@ -1,0 +1,361 @@
+@charset "UTF-8";
+@import url(font-awesome.min.css);
+@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600";
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+}
+.container-top {
+    margin-top: 0 auto;
+}
+
+.hidden{
+    display: none;
+}
+
+.center{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.centerchild {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.width-80 {
+	width: 80%;
+}
+
+.text {
+	letter-spacing: 1px;
+}
+
+/* Reset */
+.myButton {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    outline: 0;
+    -webkit-appearance: none;
+    text-decoration: none;
+}
+
+/* Custom */
+.myButton {
+    display: inline-block;
+    position: relative;
+    padding: 16px 38px;
+    top: 0;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 4px;
+    border-bottom: 1px solid #FD6B68;
+    background: #F01A14;
+    color: #fff;
+    box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.1 );
+
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    
+    -moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+.myButton:hover {
+    top: -10px;
+    box-shadow: 0px 10px 10px rgba( 15, 165, 60, 0.2 );
+
+    -webkit-transform: rotateX(20deg);
+    -moz-transform: rotateX(20deg);
+    -ms-transform: rotateX(20deg);
+    transform: rotateX(20deg);
+}
+
+.myButton:active {
+    top: 0px;
+    box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.0 );
+    background: #FD6B68;
+}
+
+.padding-10 {
+    padding: 10px;
+}
+
+#banner {
+    /*padding: 3em 0 5em 0;*/
+    background-image: url(../../images/banner.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+}
+
+#banner::before {
+    content: '';
+    background: rgba(48, 0, 189, 0.2);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#banner .inner {
+    position: relative;
+    padding-bottom: 15px;
+}
+
+#banner h1 {
+    font-size: 3.5em;
+    font-weight: 400;
+    color: #92CBFC;
+    line-height: 1em;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+#banner h3 {
+    font-weight: 300;
+    color: #72E1F8;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+#footer {
+    padding: 6em 0;
+    background: #6cc091;
+    color: #fff;
+    text-align: center;
+}
+
+#footer h3 {
+    color: #FFF;
+    margin-bottom: 2em !important;
+}
+
+#footer label {
+    text-align: left;
+    color: #FFF;
+}
+
+#footer .copyright {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8em;
+    margin: 0 0 2em 0;
+    padding: 0;
+}
+
+#footer .copyright a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+#footer .copyright a:hover {
+    color: #FFF;
+}
+
+.logo {
+    height: 96px;
+    width: 96px;
+    color: white;
+    fill: white;
+    margin: 30px;
+}
+
+svg .st0{
+    fill:none;stroke:#ffffff;stroke-width:4;stroke-miterlimit:10;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#header .left {
+    display: flex;
+    justify-content: flex-start;
+    flex: 1 1 100%;
+}
+
+#header .right {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 1 100%;
+}
+
+#header .right a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    margin: 0 10px;
+}
+
+.main, .info {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 90px;
+}
+
+.circle {
+    height: 110px;
+    width: 110px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid #eee;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);  
+}
+
+.circle img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.circle1 {
+    height: 150px;
+    width: 180px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid #eee;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);  
+}
+
+.circle1 img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pages a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.element img, .element .circle{
+    margin-bottom: 15px;
+}
+
+.lesson {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lesson * {
+    margin-top: 10px;
+}
+
+@charset "ISO-8859-1";
+.element1 {
+	text-indent: 50px;
+    text-align: left;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-color:blue;
+    width: 70%; 
+    background:#EBF8C9; 
+    padding:30px;
+    margin-top: 20px; 
+    margin-right: 150px; 
+    line-height: 1.5;
+     float: right;
+    -webkit-box-sizing: border-box; 
+    
+    
+   }
+   .element1-outline {
+	border: 15px solid #826a36;
+	padding:30px;
+	flex: 15;
+}
+   .element1 h2{
+	color:#4E4EE9;
+	text-align:center;
+	
+	}
+	
+   .content {
+   margine-top: 20px; 
+   margine-left: 370px; 
+    bottom: 0; 
+   }
+  
+body { 
+  margin: 0;
+  font-family: Arial;
+}
+
+.popup {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.popup-window {
+    width: 60%;
+    height: 50%;
+    color: white;
+    background-color: RGB(150, 10, 189);
+    box-shadow: 0 0 25px RGB(80,80,80);
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
+    text-align: center;
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.close {
+    position: fixed;
+    margin-left: 98%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.close:hover {
+    cursor: pointer;
+}

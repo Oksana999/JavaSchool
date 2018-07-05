@@ -1,6 +1,5 @@
 package com.claim;
 
-import java.awt.List;
 import java.util.Properties;	
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;

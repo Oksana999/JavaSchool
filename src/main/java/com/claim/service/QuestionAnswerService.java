@@ -16,32 +16,13 @@ import com.claim.repository.UserRepository;
 
 @Service
 public class QuestionAnswerService {
+		
+	@PersistenceContext
+	private EntityManager entityManager;
 	
-		
-		@PersistenceContext
-		private EntityManager entityManager;
-		
-		@Autowired
-		private QuestionsAnswersRepository questions_answersRepository;
-		
-		
-		
-	/*	@Transactional
-		public void test(QuestionsAnswers questions_answers)
-		{
-			questions_answersRepository.save(questions_answers);
-		}
-		
-		
-		@Transactional
-		public QuestionsAnswers test(String answers_selections, String rightAnswer)
-		{
-			return entityManager.createNamedQuery(test, QuestionsAnswers.class)
-					.setParameter("answer_selection", answers_selections)
-					.setParameter("rightAnswer", rightAnswer)
-					.getSingleResult();
-		}*/
-		
+	@Autowired
+	private QuestionsAnswersRepository questions_answersRepository;
+			
 	@Transactional
 	public ArrayList<QuestionsAnswers> getAllQuestions() {
 		return questions_answersRepository.getAllQuestions();

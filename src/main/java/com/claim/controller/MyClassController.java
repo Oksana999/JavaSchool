@@ -28,10 +28,4 @@ public class MyClassController {
 		return "lessons";
 	}
 
-	// 1 create SQL and tables
-	// 1.1 fill the tables (optional)
-	// 2 read tutorial about Hibernate
-	// 
-	
-	// table test: test_id, user_id, number_total_questions, number_correct_answ, mark, date_taken
 }

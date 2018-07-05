@@ -6,27 +6,23 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Add icon library -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"/>
         <link rel="stylesheet" href="assets/css/app.css"/>
-        <link rel="stylesheet" href="assets/css/myform.css"/>
-        <link rel="stylesheet" href="assets/css/myClass.css"/>
+        <link rel="stylesheet" href="assets/css/contacts.css"/>
         <link rel="stylesheet" href="assets/css/headers1.css"/>
-        <title>Insert title here</title>
+        <title>Contacts</title>
         <style>
-	        body {
-				    background-color: #EAE3D7;  
-				    background-position:center;
-				    background-position:top;
-				    background-repeat: no-repeat;  
-	   		}
-   		</style> 
+         body {
+			    background-color: #EAE3D7;    
+			    background-position:center;
+			    background-position:top;
+			    background-repeat: no-repeat;
+			   }
+  </style> 
+   </style>
     </head>
     <body>
-        <!-- Banner -->
     <section id="banner">
         <!-- Header -->
         <header id="header">
@@ -38,7 +34,7 @@
             </div>
             <div class="right">
                 <nav id="nav">
-                    
+                    <!--	<a href="/">Home</a>  -->
                     <a href="register">Register</a>
                     <c:choose>
                         <c:when test="${sessionScope.currentUser == null}">
@@ -51,27 +47,28 @@
                 </nav>
                 <a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
             </div>
-
         </header>
+
         <div class="inner">
-         
-            <h1>Welcome To Your Class</h1>
+            <h1>Contact Us</h1>
         </div>
-    </section>			
-    <div class="lessons">
-        <a class='myButton' style="position: absolute; top: 350px; left: 160px;" href='lesson1'>Lesson 1</a>
-        <a class='myButton' style="position: absolute; top: 350px; left: 670px;" href='lesson2'>Lesson 2</a>
-        <a class='myButton' style="position: absolute; top: 350px; left: 1200px;" href='lesson3'>Lesson 3</a>							
+    </section>
+     
+    <div class="container right">	
+        <div class="contacts">
+            <p><b>Oksana Ross</b></p>
+            <p>tel: +1 (510) 634 4209</p>
+            <p>mail: oksana.ross@gmail.com</p>
+            <p>addr: Broadmoor, CA 94015</p>
+        </div>
+        <div class="center">
+       
+        	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17863.402170681806!2d-122.50880441043026!3d37.67662693612937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7c666b029f1f%3A0xf75d69fab1e22ace!2s006122120%2C+Broadmoor%2C+CA+94015!5e0!3m2!1sen!2sus!4v1530469453730" style="position: absolute; top: 330px; left: 550px;" width="650" height="365" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
     </div>
-    <div class="test">
-        <a class="myButton" style="position: absolute; top: 530px; left: 670px;" href='test'>Go to test</a>
-    </div> 
-    <div class="circle1" style="position: absolute; top: 480px; left: 160px;">   	   
-        <img src="images/sky.jpg" alt="Pic 01" width="250" height="180/">
-    </div>
-    <div class="circle1" style="position: absolute; top: 480px; left: 1200px;">   	   
-        <img src="images/school1.jpg" alt="Pic 01" width="250" height="180/">
-    </div>
-                  
+    <br>
+    <div class="center">       	
+            	<a class="myButton" style="position: absolute; top: 750px; left: 780px;" href="/">Home</a>	
+            </div>
 </body>
 </html>
